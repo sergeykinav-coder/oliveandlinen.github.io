@@ -2,64 +2,95 @@
 <html>
 <head>
   <title>oliveandlinen</title>
-</head>
-<body style="background-color:#f5e5c4; color:#5c4732; text-align:center; font-family:Georgia, serif;">
-  <p>₊˚⊹</p>
-</body>
-</html>
-<body>
- 
-  <div class="container">
-    <!-- Page 1 content -->
-    <h1> Find your style</h1>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background-color: #a0522d; /* brown sides */
+      display: flex;
+      justify-content: center; /* center the column */
+      color: #5c4732;
+      text-align: center;
+    }
 
-    
+    .content-column {
+      max-width: 700px;           /* middle column width */
+      width: 100%;
+      background-color: #f5e5c4;  /* main scrollable column */
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .image-row {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .image-row img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .text-image-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .text-image-row div {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .text-image-row img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content-column">
+
+    <p>₊˚⊹</p>
+
+    <h1>Find your style</h1>
     <p>Do you go on social media and see an aesthetic you like but just can't pin the name of? Well lucky for you, I can help!</p>
 
-
-      <div style="display:flex; justify-content:center; gap:20px; margin-top:30px;">
-      
- <div style="max-width:200px; margin:auto;">
-    <img src="cerises.jpg" 
-   style="width:80%; height:auto; border-radius:10px;">
- </div>
-
-      <div style="max-width:200px; margin:auto;">
-    <img src="fraise.jpeg" 
-   style="width:80%; height:auto; border-radius:10px;">
- </div>
-    
- <div style="max-width:200px; margin:auto;">
-    <img src="pommes.jpg" 
-   style="width:80%; height:auto; border-radius:10px;">
- </div>
-      
+    <!-- Image row -->
+    <div class="image-row">
+      <img src="cerises.jpg">
+      <img src="fraise.jpeg">
+      <img src="pommes.jpg">
     </div>
 
-
-
-      
     <!-- More content -->
     <h2>About Me</h2>
     <p>I made this website so I can express my love for various styles.</p>
     <p>❦°❀⋆.ೃ࿔*:･</p>
-  
 
-     <!-- Footer or more slides -->
+    <!-- Text + Image row -->
+    <div class="text-image-row">
+      <div>
+        <h2>Find your fav</h2>
+        <p>Do you go on social media and see an aesthetic you like but just can't pin the name of? Well lucky for you, I can help!</p>
+        <p>Here you can find guides to certain aesthetics + info on them, different styles in different eras as well as fashion, room inspo, and many other pretty things!</p>
+      </div>
+      <div>
+        <img src="cerises.jpg">
+      </div>
+    </div>
+
     <p>Scroll down for more!</p>
-  </div>
+
+  </div> <!-- END content-column -->
 
 </body>
 </html>
-<div style="display:flex; align-items:center; justify-content:center; margin-bottom:40px; gap:20px;">
-  <!-- Text on the left -->
-  <div style="flex:1; text-align:left;">
-    <h2 style="font-family:Georgia, serif;">Find your fav</h2>
-    <p>Do you go on social media and see an aesthetic you like but just can't pin the name of? Well lucky for you, I can help!</p>
-    <p>Here you can find; guides to certain aesthetics + info on them, different styles in different eras as well as fashion, room inapo and many other pretty things!</p>
-  </div>
-
-  <!-- Image on the right -->
-  <div style="flex:1; text-align:center;">
-    <img src="cerises.jpg" style="max-width:100%; border-radius:10px;">
-  </div>
